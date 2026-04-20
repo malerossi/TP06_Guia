@@ -28,6 +28,11 @@ public class UI_MANAGER : MonoBehaviour
     }
 
     public void ShowOperationResults (){
+        txt_ResultadoSuma.text = ("El resultado de la suma entre num1 y num2 es: "+ (float.Parse(inputNum1.text) + float.Parse(inputNum2.text)).ToString());
+        txt_ResultadoResta.text = ("El resultado de la resta entre num1 y num2 es: "+ (float.Parse(inputNum1.text) - float.Parse(inputNum2.text)).ToString());
+        txt_ResultadoMultiplicacion.text = ("El resultado de la multiplicacion entre num1 y num2 es: "+ (float.Parse(inputNum1.text) * float.Parse(inputNum2.text)).ToString());
+        txt_ResultadoDivision.text = ("El resultado de la division entre num1 y num2 es: "+ (float.Parse(inputNum1.text) / float.Parse(inputNum2.text)).ToString());
+
         txt_ResultadoSuma.gameObject.SetActive (true);
         txt_ResultadoResta.gameObject.SetActive (true);
         txt_ResultadoDivision.gameObject.SetActive (true);
